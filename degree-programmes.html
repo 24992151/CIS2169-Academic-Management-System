@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Degree Programmes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <!-- Main Bar -->
+    <h1>Degree Programmes</h1>
+
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-bt">Home</a></li>
+        <li><a href="modules.html" class="nav-bt">Modules</a></li>
+        <li><a href="degree-programmes.html" class="nav-bt">Degree Programmes</a></li>
+        <li><a href="assessments.html" class="nav-bt">Assessments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="container">
+    <div id="degree-programme-list"> <!-- List of Degree Prgrammes Created -->
+    </div>
+
+    <!-- Form to create a new degree programme -->
+    <form id="create-degree-programme-form" class="hidden">
+      <div>
+        <label for="degree-programme-id">Degree Programme ID:</label>
+        <input type="text" id="degree-programme-id" required>
+      </div>
+      <div>
+        <label for="degree-programme-name">Degree Programme Name:</label>
+        <input type="text" id="degree-programme-name" required>
+      </div>
+      <div>
+        <label for="degree-programme-learning-outcomes">Learning Outcomes:</label>
+        <input type="text" id="degree-programme-learning-outcomes" required>
+      </div>
+      <div>
+        <label for="degree-programme-exit-awards">Exit Awards:</label>
+        <input type="text" id="degree-programme-exit-awards" required>
+      </div>
+      <div>
+        <label for="degree-programme-academic">Academic:</label>
+        <input type="text" id="degree-programme-academic" required>
+      </div>
+      <div>
+        <label for="module-list">Modules:</label>
+        <input type="text" id="module-list" required>
+      </div>
+      <div>
+        <label for="assessment-list">Assessments:</label>
+        <input type="text" id="assessment-list" required>
+      </div>
+      <button type="submit" id="submit-degree-programme-btn">Create</button>
+    </form>
+
+    <!-- JS Links -->
+    <script src="degree-programmes.js"></script>
+  </div>
+</body>
+</html>

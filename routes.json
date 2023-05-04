@@ -1,0 +1,6 @@
+{
+    "/pokemon/": "/pokemon?q=", 
+    "/pokemon/id/:id": "/pokemon?id=:id",
+    "/pokemon/name/:name": "/pokemon?name=:name",
+    "/pokemon/type/:type": "/pokemon?type_like=:type"
+}

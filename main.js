@@ -61,37 +61,3 @@ function renderHTML(data){
   }
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 }
-
-// displays the new module information
-function displayModuleInfo(id, name, hours, learningOutcomes, credits) {
-  document.getElementById("module-display-id").textContent = id;
-  document.getElementById("module-display-name").textContent = name;
-  document.getElementById("module-display-hours").textContent = hours;
-  document.getElementById("module-display-learning-outcomes").textContent = learningOutcomes;
-  document.getElementById("module-display-credits").textContent = credits;
-}
-
-var submitModuleBtn = document.getElementById("submit-module-btn");
-submitModuleBtn.addEventListener("click", function(event) {
-  event.preventDefault(); //Had to add this as it kept resetting the form almost immediately
-
-  var moduleId = document.getElementById("module-id").value;
-  var moduleName = document.getElementById("module-name").value;
-  var moduleHours = document.getElementById("module-hours").value;
-  var learningOutcomes = document.getElementById("module-learning-outcomes").value;
-  var credits = document.getElementById("module-credits").value;
-  displayModuleInfo(moduleId, moduleName, moduleHours, learningOutcomes, credits);
-
-  var moduleDisplaySection = document.getElementById("module-display");
-  moduleDisplaySection.classList.remove("hidden");
-});
-
-function createModule(id, name, hours, learningOutcomes, credits) {
-  var newModule = {
-    "ID": id,
-    "Name": name,
-    "Hours": hours,
-    "Learning Outcomes": learningOutcomes,
-    "Credits": credits
-  };
-}

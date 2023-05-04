@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Coursework2_WebApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <!-- Main Bar -->
+    <h1>Assessments</h1>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+          <li><a href="index.html" class="nav-bt">Home</a></li>
+          <li><a href="modules.html" class="nav-bt">Modules</a></li>
+          <li><a href="degree-programmes.html" class="nav-bt">Degree Programmes</a></li>
+          <li><a href="assessments.html" class="nav-bt">Assessments</a></li>
+        </ul>
+      </nav>      
+  </header>
+
+  <div id="container">
+    <h2>List of Assessments:</h2>
+    <ul id="assessment-list"> <!--Assessment List -->
+    </ul>
+  </div>
+
+  <!-- Form - new assessment -->
+  <form id="create-assessment-form" class="show">
+    <div>
+      <label for="assessment-name">Assessment Name:</label>
+      <input type="text" id="assessment-name">
+    </div>
+    <div>
+      <label for="assessment-type">Assessment Type:</label>
+      <input type="text" id="assessment-type">
+    </div>
+    <div>
+      <label for="assessment-weighting">Assessment Weighting:</label>
+      <input type="text" id="assessment-weighting">
+    </div>
+    <button id="submit-assessment-btn" type="submit">Submit</button>
+  </form>
+
+  <!-- Assessment information -->
+  <div id="assessment-display" class="hidden">
+    <h2>Your Submitted Assessment:</h2>
+    <div>
+      <p><span>Assessment Name:</span> <span id="assessment-display-name"></span></p>
+      <p><span>Assessment Type:</span> <span id="assessment-display-type"></span></p>
+      <p><span>Assessment Weighting:</span> <span id="assessment-display-weighting"></span></p>
+    </div>
+  </div>
+
+  <!-- JS links -->
+  <script src="assessments.js"></script>
+</body>
+</html>

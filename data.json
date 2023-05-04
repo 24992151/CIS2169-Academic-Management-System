@@ -1,0 +1,72 @@
+{
+  "degree-programmes": [
+    {
+      "id": "1",
+      "degree_id": "1",
+      "degree_title": "degree1",
+      "exit_awards": "40%",
+      "academic": "Mr Longton",
+      "learning_outcomes": [
+        "3"
+      ],
+      "modules_list": [
+        "3"
+      ]
+    },
+    {
+      "id": "2",
+      "degree_id": "2",
+      "degree_title": "degree2",
+      "exit_awards": "40%",
+      "academic": "Mr Scholefield",
+      "learning_outcomes": [
+        "3"
+      ],
+      "modules_list": [
+        "2"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "module_code": "1",
+      "module_name": "Module1",
+      "credit": "40",
+      "description": "",
+      "id": 1
+    },
+    {
+      "module_code": "1",
+      "module_name": "2",
+      "credit": "3",
+      "description": "",
+      "id": 2
+    }
+  ],
+  "assessments": [
+    {
+      "name": "assessment1",
+      "type": "1",
+      "weighting": "40",
+      "id": 1
+    },
+    {
+      "name": "asssement2",
+      "type": "3",
+      "weighting": "60",
+      "id": 2
+    },
+    {
+      "name": "assessment3",
+      "type": "4",
+      "weighting": "80",
+      "id": 3
+    },
+    {
+      "name": "assessment4",
+      "type": "25",
+      "weighting": "14",
+      "id": 4
+    }
+  ]
+}
