@@ -25,6 +25,19 @@
       "modules_list": [
         "2"
       ]
+    },
+    {
+      "id": "243",
+      "degree_id": "243",
+      "degree_title": "Web Design and Development",
+      "exit_awards": "40%",
+      "academic": "Dan",
+      "learning_outcomes": [
+        "6"
+      ],
+      "modules_list": [
+        "3"
+      ]
     }
   ],
   "modules": [
@@ -41,6 +54,13 @@
       "credit": "3",
       "description": "",
       "id": 2
+    },
+    {
+      "module_code": "1",
+      "module_name": "3",
+      "credit": "4",
+      "description": "",
+      "id": 3
     }
   ],
   "assessments": [

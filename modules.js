@@ -7,11 +7,6 @@ const form = document.querySelector('#add-module-form');
 const add_module = document.querySelector('#add-module-btn');
 const moduleContainer = document.querySelector('#module-container');
 
-// Toggle button for form
-add_module.addEventListener("click", event => {
-  form.parentElement.classList.toggle('hidden');
-});
-
 // Submit form to create a new module
 form.addEventListener("submit", event => {
   event.preventDefault();
